@@ -1,0 +1,34 @@
+body {
+	font-family: sans-serif;
+}
+
+span {
+	border: 1px solid black;
+	width: 100%;
+	float: left;
+}
+
+h1 {
+	margin: 0;
+	display: inline;
+}
+
+div.column {
+	float: left;
+	text-align: left;
+}
+
+span.top {
+	border: 0;
+	color: lightgray;
+}
+
+span.bottom {
+	border: 0;
+	color: #AAAAAA;
+}
+
+div.container {
+	display: inline-block;
+	overflow: visible;
+}

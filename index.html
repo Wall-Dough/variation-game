@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Variation Game</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<audio id="wheel" src="wheel.wav" preload="auto"></audio>
+<audio id="ding" src="ding.wav" preload="auto"></audio>
+<script src="code.js"></script>
+</head>
+<body>
+<a href="/"><h1>Andrew Walden</h1></a>
+<center>
+<h2>Variation Game</h2>
+<input type="text" value="http://goo.gl/16Skzg" readonly />
+<div style="clear: both; height: 10px;"></div>
+<div class="container">
+	<div class="column">
+		<h1>&nbsp;</h1><br />
+		<h1>Sit down if</h1>
+	</div>
+	<div class="column">
+		<h1>&nbsp;&nbsp;</h1>
+	</div>
+	<div id="param-begin" class="column">
+		<h1><span id="param-begin-top" class="top">&nbsp;</span></h1><br />
+		<h1><span id="param-begin-middle">&nbsp;</span></h1><br />
+		<h1><span id="param-begin-bottom" class="bottom">&nbsp;</span></h1><br />
+		<input id="param-begin-button" type="button" onclick="get_type()" value="Spin!" disabled />
+	</div>
+	<div class="column">
+		<h1>&nbsp;&nbsp;</h1>
+	</div>
+	<div id="param-end" class="column">
+		<h1><span id="param-end-top" class="top">&nbsp;</span></h1><br />
+		<h1><span id="param-end-middle">&nbsp;</span></h1><br />
+		<h1><span id="param-end-bottom" class="bottom">&nbsp;</span></h1><br />
+		<input id="param-end-button" type="button" onclick="get_param()" value="Spin!"/>
+	</div>
+</div>
+<div style="clear: both; height: 25px;"></div>
+<h3>You should be sitting down if...</h3>
+<div id="list">
+</div>
+</center>
+</body>
+</html>
