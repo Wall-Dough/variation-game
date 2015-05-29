@@ -10,7 +10,7 @@ var wheel;
 var ding;
 
 var client = new XMLHttpRequest();
-client.open('GET', '/items.txt');
+client.open('GET', 'items.txt');
 client.onreadystatechange = function() {
   alert(client.responseText);
 }
