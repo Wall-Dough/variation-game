@@ -9,6 +9,13 @@ var selected_type;
 var wheel;
 var ding;
 
+var client = new XMLHttpRequest();
+client.open('GET', '/items.txt');
+client.onreadystatechange = function() {
+  alert(client.responseText);
+}
+client.send();
+
 function init() {
 	params = ["wearing glasses", "wearing jeans", "wearing socks", "wearing a jacket", "wearing slip-on shoes", "wearing earring(s)", "wearing ring(s)", "wearing school colors", "wearing short sleeves", "wearing a black shirt", "carrying a purse", "a popped collar", "a writing utensil behind your ear", "pant leg(s) rolled up", "shoe(s) tied", "a ponytail"];
 	param_types = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 1];
