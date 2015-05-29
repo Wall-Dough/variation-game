@@ -12,7 +12,7 @@ var ding;
 var client = new XMLHttpRequest();
 client.open('GET', 'items.txt');
 client.onreadystatechange = function() {
-  alert(client.responseText);
+  console.log(client.responseText);
 }
 client.send();
 
