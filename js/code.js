@@ -9,13 +9,6 @@ var selected_type;
 var wheel;
 var ding;
 
-var client = new XMLHttpRequest();
-client.open('GET', 'items.txt');
-client.onreadystatechange = function() {
-  console.log(client.responseText);
-}
-client.send();
-
 function init() {
 	params = ["wearing glasses", "wearing jeans", "wearing socks", "wearing a jacket", "wearing slip-on shoes", "wearing earring(s)", "wearing ring(s)", "wearing school colors", "wearing short sleeves", "wearing a black shirt", "carrying a purse", "a popped collar", "a writing utensil behind your ear", "pant leg(s) rolled up", "shoe(s) tied", "a ponytail"];
 	param_types = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 1];
@@ -179,7 +172,7 @@ function fix_width() {
 	}
 	document.getElementById("param-end").setAttribute("style", "width: " + fixed_width.toString() + "px;");
 	param_middle.innerHTML = "&nbsp;";
-	
+
 	fixed_width = 0;
 	param_middle = document.getElementById("param-begin-middle");
 	for (var i = 0; i < types.length; i++) {
